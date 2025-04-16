@@ -250,4 +250,4 @@
                
           </ul>
      </div>
-</div><?php /**PATH D:\Laravel\Client\Paw&Care\resources\views/layouts/partials/sidebar.blade.php ENDPATH**/ ?>
+</div><?php /**PATH D:\Laravel\Client\Paw&Care\resources\views\layouts\partials\sidebar.blade.php ENDPATH**/ ?>
