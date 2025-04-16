@@ -47,14 +47,14 @@
                               <li class="sub-nav-item">
                                    <a class="sub-nav-link" href="{{ route ('second' , ['auth','password']) }}">Reset Password</a>
                               </li>
-                              <li class="sub-nav-item">
+                              {{-- <li class="sub-nav-item">
                                    <a class="sub-nav-link" href="{{ route ('second' , ['auth','lock-screen']) }}">Lock Screen</a>
-                              </li>
+                              </li> --}}
                          </ul>
                     </div>
                </li>
 
-               <li class="nav-item">
+               {{-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarError" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarError">
                          <span class="nav-icon">
@@ -72,7 +72,7 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> --}}
 
                <li class="menu-title">UI Kit...</li>
 
@@ -154,14 +154,14 @@
                     </div>
                </li>
 
-               <li class="nav-item">
+               {{-- <li class="nav-item">
                     <a class="nav-link" href="{{ route ('second' , ['pages','charts']) }}">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:chart-square-outline"></iconify-icon>
                          </span>
                          <span class="nav-text"> Apex Charts </span>
                     </a>
-               </li>
+               </li> --}}
 
                <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarForms" data-bs-toggle="collapse" role="button"
@@ -232,7 +232,7 @@
                     </div>
                </li>
 
-               <li class="nav-item">
+               {{-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarMaps" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarMaps">
                          <span class="nav-icon">
@@ -250,7 +250,7 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> --}}
 
                <li class="menu-title">Other</li>
 
@@ -290,7 +290,7 @@
                     </div>
                </li>
 
-               <li class="nav-item">
+               {{-- <li class="nav-item">
                     <a class="nav-link menu-arrow" href="#sidebarMultiLevelDemo" data-bs-toggle="collapse" role="button"
                          aria-expanded="false" aria-controls="sidebarMultiLevelDemo">
                          <span class="nav-icon">
@@ -319,16 +319,16 @@
                               </li>
                          </ul>
                     </div>
-               </li>
+               </li> --}}
 
-               <li class="nav-item">
+               {{-- <li class="nav-item">
                     <a class="nav-link disabled" href="javascript:void(0);">
                          <span class="nav-icon">
                               <iconify-icon icon="solar:library-outline"></iconify-icon>
                          </span>
                          <span class="nav-text"> Disable Item </span>
                     </a>
-               </li>
+               </li> --}}
           </ul>
      </div>
 </div>

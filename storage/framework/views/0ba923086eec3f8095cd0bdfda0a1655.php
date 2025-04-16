@@ -7,4 +7,4 @@
 
 <?php echo app('Illuminate\Foundation\Vite')([ 'resources/scss/icons.scss', 'resources/scss/style.scss']); ?>
 
-<?php echo app('Illuminate\Foundation\Vite')([ 'resources/js/config.js']); ?><?php /**PATH D:\Laravel\Templates\Admin-Panel\Taplox-Laravel_v1.0\Taplox-Laravel\resources\views/layouts/partials/head-css.blade.php ENDPATH**/ ?>
+<?php echo app('Illuminate\Foundation\Vite')([ 'resources/js/config.js']); ?><?php /**PATH C:\laragon\www\personal_project\paw-and-care\resources\views/layouts/partials/head-css.blade.php ENDPATH**/ ?>

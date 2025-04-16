@@ -48,4 +48,4 @@
 <?php $component = $__componentOriginal74daf2d0a9c625ad90327a6043d15980; ?>
 <?php unset($__componentOriginal74daf2d0a9c625ad90327a6043d15980); ?>
 <?php endif; ?>
-<?php /**PATH D:\Laravel\Templates\Admin-Panel\Taplox-Laravel_v1.0\Taplox-Laravel\vendor\laravel\framework\src\Illuminate\Foundation\Providers/../resources/exceptions/renderer/components/header.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\laragon\www\personal_project\paw-and-care\vendor\laravel\framework\src\Illuminate\Foundation\Providers/../resources/exceptions/renderer/components/header.blade.php ENDPATH**/ ?>

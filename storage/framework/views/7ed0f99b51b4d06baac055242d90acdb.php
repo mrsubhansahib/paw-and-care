@@ -107,4 +107,4 @@
 <?php $component = $__componentOriginalbbd4eeea836234825f7514ed20d2d52d; ?>
 <?php unset($__componentOriginalbbd4eeea836234825f7514ed20d2d52d); ?>
 <?php endif; ?>
-<?php /**PATH D:\Laravel\Templates\Admin-Panel\Taplox-Laravel_v1.0\Taplox-Laravel\vendor\laravel\framework\src\Illuminate\Foundation\Providers/../resources/exceptions/renderer/show.blade.php ENDPATH**/ ?>
+<?php /**PATH C:\laragon\www\personal_project\paw-and-care\vendor\laravel\framework\src\Illuminate\Foundation\Providers/../resources/exceptions/renderer/show.blade.php ENDPATH**/ ?>

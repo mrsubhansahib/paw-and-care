@@ -8,4 +8,4 @@
             </ol>
         </div>
     </div>
-</div><?php /**PATH D:\Laravel\Templates\Admin-Panel\Taplox-Laravel_v1.0\Taplox-Laravel\resources\views/layouts/partials/page-title.blade.php ENDPATH**/ ?>
+</div><?php /**PATH C:\laragon\www\personal_project\paw-and-care\resources\views/layouts/partials/page-title.blade.php ENDPATH**/ ?>

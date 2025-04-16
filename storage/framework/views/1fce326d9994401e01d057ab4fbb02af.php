@@ -467,4 +467,4 @@
 <?php $__env->startSection('scripts'); ?>
 <?php echo app('Illuminate\Foundation\Vite')(['resources/js/pages/dashboard.js']); ?>
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.vertical', ['subtitle' => 'Dashboard'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\Templates\Admin-Panel\Taplox-Laravel_v1.0\Taplox-Laravel\resources\views/index.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.vertical', ['subtitle' => 'Dashboard'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\laragon\www\personal_project\paw-and-care\resources\views/index.blade.php ENDPATH**/ ?>
