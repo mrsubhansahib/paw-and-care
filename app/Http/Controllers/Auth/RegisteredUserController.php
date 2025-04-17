@@ -19,7 +19,7 @@ class RegisteredUserController extends Controller
      */
     public function create()
     {
-        return view('auth.register');
+        return view('auth.signup');
     }
 
     /**
@@ -35,8 +35,9 @@ class RegisteredUserController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'email' => 'required|string|email|max:255|unique:users',
-            'password' => 'required|string|confirmed|min:8',
+            'password' => 'required|string|min:8',
         ]);
+        // dd($request->all());
 
         $user = User::create([
             'name' => $request->name,
@@ -47,7 +48,7 @@ class RegisteredUserController extends Controller
         event(new Registered($user));
 
         Auth::login($user);
-
-        return redirect(RouteServiceProvider::HOME);
+        // dd($user);
+        return redirect('/')->with('success', 'Registration successful! You are now logged in.');
     }
 }

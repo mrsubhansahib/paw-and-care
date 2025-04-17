@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 require __DIR__ . '/auth.php';
 
-Route::group(['prefix' => '/',], function () {
+Route::group(['prefix' => '/','middleware' => 'auth'], function () {
     //Custom Routes
 
     //Existing routes

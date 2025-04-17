@@ -3,11 +3,14 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class RoutingController extends Controller
 {
     public function index(Request $request)
     {
+        // dd(Auth::check());
+
         return view('index');
     }
 
