@@ -9,9 +9,13 @@ class RoutingController extends Controller
 {
     public function index(Request $request)
     {
+<<<<<<< Updated upstream
         // dd(Auth::check());
 
         return view('index');
+=======
+        return view('layouts.web.home.index');
+>>>>>>> Stashed changes
     }
 
     /**
