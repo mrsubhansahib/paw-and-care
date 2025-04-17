@@ -25,9 +25,7 @@ class="authentication-bg"
                                 <p class="text-muted">Sign in to your account to continue</p>
                         </div>
                         <form method="POST" action="{{ route('login') }}" class="mt-4">
-
                             @csrf
-
                             <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
                                 <input type="email" class="form-control" id="email" name="email" value="user@demo.com"
@@ -53,7 +51,7 @@ class="authentication-bg"
                     </div>
                 </div>
                 <p class="text-center mt-4 text-white text-opacity-50">Don't have an account?
-                    <a href="{{ route('second', ['auth', 'signup']) }}"
+                    <a href="{{ route('register') }}"
                         class="text-decoration-none text-white fw-bold">Sign Up</a>
                 </p>
             </div>

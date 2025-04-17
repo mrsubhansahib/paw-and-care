@@ -25,20 +25,21 @@ class="authentication-bg"
                                 </p>
                         </div>
 
-                        <form action="<?php echo e(route('any', 'index')); ?>" class="mt-4">
+                        <form action="<?php echo e(route('register')); ?>" method="POST" class="mt-4">
+                            <?php echo csrf_field(); ?>
                             <div class="mb-3">
                                 <label class="form-label" for="example-name">Name</label>
-                                <input type="name" id="example-name" name="example-name" class="form-control"
+                                <input type="name" id="example-name" value="<?php echo e(old('name')); ?>" name="name" class="form-control"
                                     placeholder="Enter your name">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="example-email">Email</label>
-                                <input type="email" id="example-email" name="example-email" class="form-control"
+                                <input type="email" id="example-email" value="<?php echo e(old('email')); ?>"  name="email" class="form-control"
                                     placeholder="Enter your email">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="example-password">Password</label>
-                                <input type="text" id="example-password" class="form-control"
+                                <input type="password" id="example-password" class="form-control" name="password"
                                     placeholder="Enter your password">
                             </div>
                             <div class="mb-3">

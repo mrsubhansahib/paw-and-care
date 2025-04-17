@@ -1,10 +1,8 @@
-@extends('layouts.base', ['subtitle' => 'Sign Up'])
-
-@section('body-attribuet')
+<?php $__env->startSection('body-attribuet'); ?>
 class="authentication-bg"
-@endsection
+<?php $__env->stopSection(); ?>
 
-@section('content')
+<?php $__env->startSection('content'); ?>
 <div class="account-pages py-5">
     <div class="container">
         <div class="row justify-content-center">
@@ -13,11 +11,11 @@ class="authentication-bg"
                     <div class="card-body p-5">
                         <div class="text-center">
                             <div class="mx-auto mb-4 text-center auth-logo">
-                                <a href="{{ route('any', 'index') }}" class="logo-dark">
+                                <a href="<?php echo e(route('any', 'index')); ?>" class="logo-dark">
                                     <img src="/images/logo-dark.png" height="32" alt="logo dark">
                                 </a>
 
-                                <a href="{{ route('any', 'index') }}" class="logo-light">
+                                <a href="<?php echo e(route('any', 'index')); ?>" class="logo-light">
                                     <img src="/images/logo-light.png" height="28" alt="logo light">
                                 </a>
                             </div>
@@ -27,16 +25,16 @@ class="authentication-bg"
                                 </p>
                         </div>
 
-                        <form action="{{ route('register') }}" method="POST" class="mt-4">
-                            @csrf
+                        <form action="<?php echo e(route('register')); ?>" method="POST" class="mt-4">
+                            <?php echo csrf_field(); ?>
                             <div class="mb-3">
                                 <label class="form-label" for="example-name">Name</label>
-                                <input type="name" id="example-name" value="{{old('name')}}" name="name" class="form-control"
+                                <input type="name" id="example-name" value="<?php echo e(old('name')); ?>" name="name" class="form-control"
                                     placeholder="Enter your name">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label" for="example-email">Email</label>
-                                <input type="email" id="example-email" value="{{old('email')}}"  name="email" class="form-control"
+                                <input type="email" id="example-email" value="<?php echo e(old('email')); ?>"  name="email" class="form-control"
                                     placeholder="Enter your email">
                             </div>
                             <div class="mb-3">
@@ -60,11 +58,12 @@ class="authentication-bg"
                     </div>
                 </div>
                 <p class="text-center mt-4 text-white text-opacity-50">I already have an account
-                    <a href="{{ route('second', ['auth', 'signin']) }}"
+                    <a href="<?php echo e(route('second', ['auth', 'signin'])); ?>"
                         class="text-decoration-none text-white fw-bold">Sign In</a>
                 </p>
             </div>
         </div>
     </div>
 </div>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.base', ['subtitle' => 'Sign Up'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\Client\Paw&Care\resources\views/auth/signup.blade.php ENDPATH**/ ?>

@@ -49,7 +49,7 @@ class="authentication-bg"
                     </div>
                 </div>
                 <p class="text-center mt-4 text-white text-opacity-50">Don't have an account?
-                    <a href="<?php echo e(route('second', ['auth', 'signup'])); ?>"
+                    <a href="<?php echo e(route('register')); ?>"
                         class="text-decoration-none text-white fw-bold">Sign Up</a>
                 </p>
             </div>
@@ -57,4 +57,4 @@ class="authentication-bg"
     </div>
 </div>
 <?php $__env->stopSection(); ?>
-<?php echo $__env->make('layouts.base', ['subtitle' => 'Sign In'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\Client\Paw&Care\resources\views\auth\signin.blade.php ENDPATH**/ ?>
+<?php echo $__env->make('layouts.base', ['subtitle' => 'Sign In'], \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH D:\Laravel\Client\Paw&Care\resources\views/auth/signin.blade.php ENDPATH**/ ?>
