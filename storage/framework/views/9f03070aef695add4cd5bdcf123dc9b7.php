@@ -1,71 +1,7 @@
 
 
 <?php $__env->startSection('content'); ?>
-    <header class="header-area transparent">
-        <div class="container">
-            <div class="row no-gutter align-items-center position-relative">
-                <div class="col-12">
-                    <div class="header-align">
-                        <div class="header-align-start">
-                            <div class="header-logo-area">
-                                <a href="#">
-                                    <img class="logo-main" src="<?php echo e(asset('web/assets/img/logo-light.webp')); ?>" width="158"
-                                        height="36" alt="Logo" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-align-center">
-                            <div class="header-navigation-area position-relative">
-                                <ul class="main-menu nav">
-                                    <li class="has-submenu"><a href="<?php echo e(route('home')); ?>"><span>Home</span></a>
-                                    </li>
-                                    <li><a href="<?php echo e(route('about')); ?>"><span>About</span></a></li>
-                                    <li class="has-submenu position-static"><a
-                                            href="<?php echo e(route('shop')); ?>"><span>Shop</span></a>
-                                    </li>
-                                    <li class="has-submenu"><a href="<?php echo e(route('blog')); ?>"><span>Blog</span></a>
-                                    </li>
-                                    <li class="has-submenu"><a href="<?php echo e(route('adopt')); ?>"><span>ADOPTION</span></a>
-                                    </li>
-                                    <li><a href="#"><span>Contact</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-align-end">
-                            <div class="header-action-area">
-                                <div class="shopping-search">
-                                    <button class="shopping-search-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch"><i
-                                            class="pe-7s-search icon"></i></button>
-                                </div>
-                                <div class="shopping-account">
-                                    <a class="shopping-account-btn" href="#">
-                                        <i class="pe-7s-users icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-wishlist">
-                                    <a class="shopping-wishlist-btn" href="#">
-                                        <i class="pe-7s-like icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-cart">
-                                    <button class="shopping-cart-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasCart" aria-controls="AsideOffcanvasCart">
-                                        <i class="pe-7s-shopbag icon"></i>
-                                        <sup class="shop-count">2</sup>
-                                    </button>
-                                </div>
-                                <button class="btn-menu" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
-                                    <i class="pe-7s-menu"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    
     <main class="main-content">
         <!--== Start Hero Area Wrapper ==-->
         <section class="home-slider-area">
@@ -87,7 +23,7 @@
                                                         <h2 class="title">A Greate Meal With Your Pet</h2>
                                                     </div>
                                                     <div class="btn-box">
-                                                        <a class="btn-theme text-dark" href="#">Shop Now</a>
+                                                        <a class="btn-theme text-dark" href="<?php echo e(route('shop')); ?>">Shop Now</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -126,7 +62,7 @@
                                                             tempor incidid ut labore.</p>
                                                     </div>
                                                     <div class="btn-box">
-                                                        <a class="btn-theme text-dark" href="#">Shop Now</a>
+                                                        <a class="btn-theme text-dark" href="<?php echo e(route('shop')); ?>">Shop Now</a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -253,7 +189,7 @@
                             <div class="content">
                                 <h5 class="sub-title">50% Off</h5>
                                 <h5 class="title">Dog Food</h5>
-                                <a class="btn-theme btn-theme-color btn-sm" href="#">Shop Now</a>
+                                <a class="btn-theme btn-theme-color btn-sm" href="<?php echo e(route('shop')); ?>">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -268,7 +204,7 @@
                             <div class="content">
                                 <h5 class="sub-title">50% Off</h5>
                                 <h5 class="title">Cat Food</h5>
-                                <a class="btn-theme btn-theme-color btn-sm" href="#">Shop Now</a>
+                                <a class="btn-theme btn-theme-color btn-sm" href="<?php echo e(route('shop')); ?>">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -590,7 +526,7 @@
                             <h2 class="title">Best Deal Offer</h2>
                             <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
                                 incididunt ut labore etlop.</p>
-                            <a class="btn-theme text-dark" href="#">Shop Now</a>
+                            <a class="btn-theme text-dark" href="<?php echo e(route('shop')); ?>">Shop Now</a>
                             <img class="shape-object" src="<?php echo e(asset('web/assets/img/shape/object1.webp')); ?>" width="316"
                                 height="302" alt="Image-HasTech">
                         </div>
@@ -748,7 +684,7 @@
                                     sunt in culpa qui officia deserun mollit anim id est laborum. Sed ut perspiciatis unde
                                     omnis iste
                                     natus error.</p>
-                                <a class="btn-theme" href="#">Shop Now</a>
+                                <a class="btn-theme" href="<?php echo e(route('shop')); ?>">Shop Now</a>
                             </div>
                         </div>
                         <div class="col-lg-6 order-1 order-lg-2">
@@ -779,7 +715,7 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
+                                <a href="<?php echo e(route('blog-detail')); ?>">
                                     <img src="<?php echo e(asset('web/assets/img/blog/1.webp')); ?>" width="350" height="250"
                                         alt="Image-HasTech">
                                 </a>
@@ -791,9 +727,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Lorem ipsum dolor sit amet conse adipis.</a>
+                                <h4 class="title"><a href="<?php echo e(route('blog-detail')); ?>">Lorem ipsum dolor sit amet conse adipis.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="<?php echo e(route('blog-detail')); ?>">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -802,7 +738,7 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
+                                <a href="<?php echo e(route('blog-detail')); ?>">
                                     <img src="<?php echo e(asset('web/assets/img/blog/2.webp')); ?>" width="350" height="250"
                                         alt="Image-HasTech">
                                 </a>
@@ -814,10 +750,10 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">It is a long established fact that a reader
+                                <h4 class="title"><a href="<?php echo e(route('blog-detail')); ?>">It is a long established fact that a reader
                                         will.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="<?php echo e(route('blog-detail')); ?>">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -826,7 +762,7 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
+                                <a href="<?php echo e(route('blog-detail')); ?>">
                                     <img src="<?php echo e(asset('web/assets/img/blog/3.webp')); ?>" width="350" height="250"
                                         alt="Image-HasTech">
                                 </a>
@@ -838,9 +774,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">fashions fade, style is eternal About
+                                <h4 class="title"><a href="<?php echo e(route('blog-detail')); ?>">fashions fade, style is eternal About
                                         Upto.</a></h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="<?php echo e(route('blog-detail')); ?>">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -1027,9 +963,9 @@
                 </li>
             </ul>
             <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-            <a class="btn-total" href="shop-cart.html">View cart</a>
-            <a class="btn-total" href="shop-checkout.html">Checkout</a>
-            <a class="d-block text-end lh-1" href="shop-checkout.html"><img src="assets/img/photos/paypal.webp" width="133"
+            <a class="btn-total" href="<?php echo e(route('cart')); ?>">View cart</a>
+            <a class="btn-total" href="<?php echo e(route('checkout')); ?>">Checkout</a>
+            <a class="d-block text-end lh-1" href="<?php echo e(route('checkout')); ?>"><img src="assets/img/photos/paypal.webp" width="133"
                     height="26" alt="Has-image"></a>
         </div>
     </aside>
@@ -1108,8 +1044,8 @@
                             <li>
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Others Pages</a>
                                 <ul>
-                                    <li><a href="shop-cart.html"><span>Shopping Cart</span></a></li>
-                                    <li><a href="shop-checkout.html"><span>Checkout</span></a></li>
+                                    <li><a href="<?php echo e(route('cart')); ?>"><span>Shopping Cart</span></a></li>
+                                    <li><a href="<?php echo e(route('checkout')); ?>"><span>Checkout</span></a></li>
                                     <li><a href="shop-wishlist.html"><span>Wishlist</span></a></li>
                                     <li><a href="shop-compare.html"><span>Compare</span></a></li>
                                 </ul>
@@ -1132,7 +1068,7 @@
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Single Blog</a>
                                 <ul>
                                     <li><a href="blog-details-no-sidebar.html">Blog Details</a></li>
-                                    <li><a href="blog-details.html">Blog Details Left Sidebar</a></li>
+                                    <li><a href="<?php echo e(route('blog-detail')); ?>">Blog Details Left Sidebar</a></li>
                                     <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
                                 </ul>
                             </li>

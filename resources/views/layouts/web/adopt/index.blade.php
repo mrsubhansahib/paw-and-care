@@ -1,71 +1,6 @@
 @extends('layouts.web.app')
 @section('content')
-    <header class="header-area" data-bg-img="{{ asset('web/assets/img/photos/header-bg.webp') }}">
-        <div class="container">
-            <div class="row no-gutter align-items-center position-relative">
-                <div class="col-12">
-                    <div class="header-align">
-                        <div class="header-align-start">
-                            <div class="header-logo-area">
-                                <a href="#">
-                                    <img class="logo-main" src="{{ asset('web/assets/img/logo-light.webp') }}" width="158"
-                                        height="36" alt="Logo" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-align-center">
-                            <div class="header-navigation-area position-relative">
-                                <ul class="main-menu nav">
-                                    <li class="has-submenu"><a href="{{ route('home')}}"><span>Home</span></a>
-                                    </li>
-                                    <li><a href="{{ route('about') }}"><span>About</span></a></li>
-                                    <li class="has-submenu position-static"><a
-                                            href="{{ route('shop') }}"><span>Shop</span></a>
-                                    </li>
-                                    <li class="has-submenu"><a href="{{ route('blog') }}"><span>Blog</span></a>
-                                    </li>
-                                    <li class="has-submenu"><a href="{{ route('adopt') }}"><span>ADOPTION</span></a>
-                                    </li>
-                                    <li><a href="#"><span>Contact</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-align-end">
-                            <div class="header-action-area">
-                                <div class="shopping-search">
-                                    <button class="shopping-search-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch"><i
-                                            class="pe-7s-search icon"></i></button>
-                                </div>
-                                <div class="shopping-account">
-                                    <a class="shopping-account-btn" href="#">
-                                        <i class="pe-7s-users icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-wishlist">
-                                    <a class="shopping-wishlist-btn" href="#">
-                                        <i class="pe-7s-like icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-cart">
-                                    <button class="shopping-cart-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasCart" aria-controls="AsideOffcanvasCart">
-                                        <i class="pe-7s-shopbag icon"></i>
-                                        <sup class="shop-count">2</sup>
-                                    </button>
-                                </div>
-                                <button class="btn-menu" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
-                                    <i class="pe-7s-menu"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
-
+    
     <main class="main-content">
         <!--== Start Page Header Area Wrapper ==-->
         <div class="page-header-area" data-bg-img="{{ asset('web/assets/img/photos/bg1.webp')}}">
@@ -494,9 +429,9 @@
                 </li>
             </ul>
             <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-            <a class="btn-total" href="shop-cart.html">View cart</a>
-            <a class="btn-total" href="shop-checkout.html">Checkout</a>
-            <a class="d-block text-end lh-1" href="shop-checkout.html"><img src="{{ asset('web/assets/img/photos/paypal.webp')}}" width="133"
+            <a class="btn-total" href="{{ route('cart') }}">View cart</a>
+            <a class="btn-total" href="{{ route('checkout') }}">Checkout</a>
+            <a class="d-block text-end lh-1" href="{{ route('checkout') }}"><img src="{{ asset('web/assets/img/photos/paypal.webp')}}" width="133"
                     height="26" alt="Has-image"></a>
         </div>
     </aside>
@@ -575,8 +510,8 @@
                             <li>
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Others Pages</a>
                                 <ul>
-                                    <li><a href="shop-cart.html"><span>Shopping Cart</span></a></li>
-                                    <li><a href="shop-checkout.html"><span>Checkout</span></a></li>
+                                    <li><a href="{{ route('cart') }}"><span>Shopping Cart</span></a></li>
+                                    <li><a href="{{ route('checkout') }}"><span>Checkout</span></a></li>
                                     <li><a href="shop-wishlist.html"><span>Wishlist</span></a></li>
                                     <li><a href="shop-compare.html"><span>Compare</span></a></li>
                                 </ul>

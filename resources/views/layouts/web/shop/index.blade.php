@@ -1,122 +1,6 @@
 @extends('layouts.web.app')
 @section('content')
-    <header class="header-area" data-bg-img="{{ asset('web/assets/img/photos/header-bg.webp') }}">
-        <div class="container">
-            <div class="row no-gutter align-items-center position-relative">
-                <div class="col-12">
-                    <div class="header-align">
-                        <div class="header-align-start">
-                            <div class="header-logo-area">
-                                <a href="#">
-                                    <img class="logo-main" src="{{ asset('web/assets/img/logo-light.webp') }}" width="158"
-                                        height="36" alt="Logo" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-align-center">
-                            <div class="header-navigation-area position-relative">
-                                <ul class="main-menu nav">
-                                    <li class="has-submenu"><a href="{{ route('home')}}"><span>Home</span></a>
-                                        <!-- <ul class="submenu-nav">
-                              <li><a href="index.html"><span>Home One</span></a></li>
-                              <li><a href="index-two.html"><span>Home Two</span></a></li>
-                            </ul> -->
-                                    </li>
-                                    <li><a href="{{ route('about') }}"><span>About</span></a></li>
-                                    <li class="has-submenu position-static"><a
-                                            href="{{ route('shop') }}"><span>Shop</span></a>
-                                        <!-- <ul class="submenu-nav submenu-nav-mega column-3">
-                              <li class="mega-menu-item"><a href="#/" class="mega-title"><span>Shop Layout</span></a>
-                                <ul>
-                                  <li><a href="shop-three-columns.html"><span>Shop 3 Column</span></a></li>
-                                  <li><a href="shop-four-columns.html"><span>Shop 4 Column</span></a></li>
-                                  <li><a href="shop-left-sidebar.html"><span>Shop Left Sidebar</span></a></li>
-                                  <li><a href="shop.html"><span>Shop Right Sidebar</span></a></li>
-                                </ul>
-                              </li>
-                              <li class="mega-menu-item"><a href="#/" class="mega-title"><span>Single Product</span></a>
-                                <ul>
-                                  <li><a href="single-normal-product.html"><span>Single Product Normal</span></a></li>
-                                  <li><a href="single-product.html"><span>Single Product Variable</span></a></li>
-                                  <li><a href="single-group-product.html"><span>Single Product Group</span></a></li>
-                                  <li><a href="single-affiliate-product.html"><span>Single Product Affiliate</span></a></li>
-                                </ul>
-                              </li>
-                              <li class="mega-menu-item"><a href="#/" class="mega-title"><span>Others Pages</span></a>
-                                <ul>
-                                  <li><a href="shop-cart.html"><span>Shopping Cart</span></a></li>
-                                  <li><a href="shop-checkout.html"><span>Checkout</span></a></li>
-                                  <li><a href="shop-wishlist.html"><span>Wishlist</span></a></li>
-                                  <li><a href="shop-compare.html"><span>Compare</span></a></li>
-                                </ul>
-                              </li>
-                            </ul> -->
-                                    </li>
-                                    <li class="has-submenu"><a href="{{ route('blog') }}"><span>Blog</span></a>
-                                        <!-- <ul class="submenu-nav submenu-nav-mega">
-                              <li class="mega-menu-item"><a href="#/" class="mega-title">Blog Layout</a>
-                                <ul>
-                                  <li><a href="blog-grid.html">Blog Grid</a></li>
-                                  <li><a href="blog.html">Blog Left Sidebar</a></li>
-                                  <li><a href="blog-right-sidebar.html">Blog Right Sidebar</a></li>
-                                </ul>
-                              </li>
-                              <li class="mega-menu-item"><a href="#/" class="mega-title">Single Blog</a>
-                                <ul>
-                                  <li><a href="blog-details-no-sidebar.html">Blog Details</a></li>
-                                  <li><a href="blog-details.html">Blog Details Left Sidebar</a></li>
-                                  <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
-                                </ul>
-                              </li>
-                            </ul> -->
-                                    </li>
-                                    <li class="has-submenu"><a href="{{ route('adopt') }}"><span>ADOPTION</span></a>
-                                        <!-- <ul class="submenu-nav">
-                              <li><a href="account.html"><span>Account</span></a></li>
-                              <li><a href="account-login.html"><span>Login</span></a></li>
-                              <li><a href="account-register.html"><span>Register</span></a></li>
-                              <li><a href="page-not-found.html"><span>Page Not Found</span></a></li>
-                            </ul> -->
-                                    </li>
-                                    <li><a href="#"><span>Contact</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-align-end">
-                            <div class="header-action-area">
-                                <div class="shopping-search">
-                                    <button class="shopping-search-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch"><i
-                                            class="pe-7s-search icon"></i></button>
-                                </div>
-                                <div class="shopping-account">
-                                    <a class="shopping-account-btn" href="#">
-                                        <i class="pe-7s-users icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-wishlist">
-                                    <a class="shopping-wishlist-btn" href="#">
-                                        <i class="pe-7s-like icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-cart">
-                                    <button class="shopping-cart-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasCart" aria-controls="AsideOffcanvasCart">
-                                        <i class="pe-7s-shopbag icon"></i>
-                                        <sup class="shop-count">2</sup>
-                                    </button>
-                                </div>
-                                <button class="btn-menu" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
-                                    <i class="pe-7s-menu"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    
     <main class="main-content">
         <!--== Start Page Header Area Wrapper ==-->
         <div class="page-header-area" data-bg-img="{{ asset('web/assets/img/photos/bg1.webp') }}">
@@ -127,7 +11,7 @@
                             <h2 class="title">Products</h2>
                             <nav class="breadcrumb-area">
                                 <ul class="breadcrumb">
-                                    <li><a href="{{ asset('#') }}">Home</a></li>
+                                    <li><a href="{{ route('home') }}">Home</a></li>
                                     <li class="breadcrumb-sep">//</li>
                                     <li>Products</li>
                                 </ul>
@@ -206,13 +90,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/2.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Endeavor
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Endeavor
                                                                 Daytripa</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$33.00</span>
@@ -243,13 +127,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/3.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Impulse Duffle</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Impulse Duffle</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$65.00</span>
@@ -280,13 +164,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/4.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Driven Backpack</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Driven Backpack</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$25.00</span>
@@ -317,13 +201,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/6.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Savvy Shoulder
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Savvy Shoulder
                                                                 Tote</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$30.00</span>
@@ -354,13 +238,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/7.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Voyage Yoga Bag</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Voyage Yoga Bag</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$39.00</span>
@@ -391,13 +275,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/8.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Wayfarer Messenger
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Wayfarer Messenger
                                                                 Bag</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$50.00</span>
@@ -428,13 +312,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/3.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Impulse Duffle</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Impulse Duffle</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$65.00</span>
@@ -465,13 +349,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/1.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Joust Duffle Bag</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Joust Duffle Bag</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$20.19</span>
@@ -502,13 +386,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/5.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Fusion Backpack</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Fusion Backpack</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$45.00</span>
@@ -539,13 +423,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/4.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Driven Backpack</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Driven Backpack</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$25.00</span>
@@ -576,13 +460,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/7.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Voyage Yoga Bag</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Voyage Yoga Bag</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$39.00</span>
@@ -613,13 +497,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/8.webp')}}" width="270"
                                                                 height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Wayfarer Messenger
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Wayfarer Messenger
                                                                 Bag</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$50.00</span>
@@ -667,7 +551,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-1.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -689,7 +573,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Endeavor
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Endeavor
                                                                         Daytripa</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$33.00</span>
@@ -716,7 +600,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-2.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -738,7 +622,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Impulse
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Impulse
                                                                         Duffle</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$65.00</span>
@@ -765,7 +649,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-3.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -787,7 +671,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Driven
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Driven
                                                                         Backpack</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$25.00</span>
@@ -814,7 +698,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-4.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -836,7 +720,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Savvy
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Savvy
                                                                         Shoulder Tote</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$30.00</span>
@@ -863,7 +747,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-5.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -885,7 +769,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Voyage Yoga
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Voyage Yoga
                                                                         Bag</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$39.00</span>
@@ -912,7 +796,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-6.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -934,7 +818,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Wayfarer
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Wayfarer
                                                                         Messenger Bag</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$50.00</span>
@@ -961,7 +845,7 @@
                                                     <div class="row">
                                                         <div class="col-lg-6">
                                                             <div class="product-thumb">
-                                                                <a href="single-product.html">
+                                                                <a href="{{ route('single-product') }}">
                                                                     <img src="{{ asset('web/assets/img/shop/col2-8.webp')}}"
                                                                         width="420" height="320" alt="Image-HasTech">
                                                                 </a>
@@ -983,7 +867,7 @@
                                                         </div>
                                                         <div class="col-lg-6">
                                                             <div class="product-info">
-                                                                <h4 class="title"><a href="single-product.html">Impulse
+                                                                <h4 class="title"><a href="{{ route('single-product') }}">Impulse
                                                                         Duffle</a></h4>
                                                                 <div class="prices">
                                                                     <span class="price">$65.00</span>
@@ -1024,13 +908,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-1.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Endeavor
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Endeavor
                                                                 Daytripa</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$33.00</span>
@@ -1061,13 +945,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-2.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Impulse Duffle</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Impulse Duffle</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$65.00</span>
@@ -1098,13 +982,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-3.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Driven Backpack</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Driven Backpack</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$25.00</span>
@@ -1135,13 +1019,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-4.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Savvy Shoulder
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Savvy Shoulder
                                                                 Tote</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$30.00</span>
@@ -1172,13 +1056,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-5.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Voyage Yoga Bag</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Voyage Yoga Bag</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$39.00</span>
@@ -1209,13 +1093,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-6.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Wayfarer Messenger
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Wayfarer Messenger
                                                                 Bag</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$50.00</span>
@@ -1246,13 +1130,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-2.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Impulse Duffle</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Impulse Duffle</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$65.00</span>
@@ -1283,13 +1167,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-7.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Joust Duffle Bag</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Joust Duffle Bag</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$20.19</span>
@@ -1320,13 +1204,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-8.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Fusion Backpack</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Fusion Backpack</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$45.00</span>
@@ -1357,13 +1241,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-3.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Driven Backpack</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Driven Backpack</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$25.00</span>
@@ -1394,13 +1278,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-5.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Voyage Yoga Bag</a>
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Voyage Yoga Bag</a>
                                                         </h4>
                                                         <div class="prices">
                                                             <span class="price">$39.00</span>
@@ -1431,13 +1315,13 @@
                                                 <!--== Start Product Item ==-->
                                                 <div class="product-item">
                                                     <div class="product-thumb">
-                                                        <a href="single-product.html">
+                                                        <a href="{{ route('single-product') }}">
                                                             <img src="{{ asset('web/assets/img/shop/col2-6.webp')}}"
                                                                 width="420" height="320" alt="Image-HasTech">
                                                         </a>
                                                     </div>
                                                     <div class="product-info">
-                                                        <h4 class="title"><a href="single-product.html">Wayfarer Messenger
+                                                        <h4 class="title"><a href="{{ route('single-product') }}">Wayfarer Messenger
                                                                 Bag</a></h4>
                                                         <div class="prices">
                                                             <span class="price">$50.00</span>
@@ -1575,7 +1459,7 @@
                                 <img src="{{ asset('web/assets/img/shop/modal1.webp')}}" alt="Organic Food Juice"
                                     width="466" height="320">
                             </div>
-                            <h4 class="product-name"><a href="single-product.html">Joust Duffle Bag</a></h4>
+                            <h4 class="product-name"><a href="{{ route('single-product') }}">Joust Duffle Bag</a></h4>
                         </div>
                     </div>
                 </div>
@@ -1601,7 +1485,7 @@
                                 <img src="{{ asset('web/assets/img/shop/modal1.webp')}}" alt="Organic Food Juice"
                                     width="466" height="320">
                             </div>
-                            <h4 class="product-name"><a href="single-product.html">Joust Duffle Bag</a></h4>
+                            <h4 class="product-name"><a href="{{ route('single-product') }}">Joust Duffle Bag</a></h4>
                         </div>
                     </div>
                 </div>
@@ -1707,7 +1591,7 @@
             <ul class="aside-cart-product-list">
                 <li class="aside-product-list-item">
                     <a href="#/" class="remove">×</a>
-                    <a href="single-product.html">
+                    <a href="{{ route('single-product') }}">
                         <img src="{{ asset('web/assets/img/shop/product-mini/1.webp')}}" width="90" height="110"
                             alt="Image-HasTech">
                         <span class="product-title">Leather Mens Slipper</span>
@@ -1716,7 +1600,7 @@
                 </li>
                 <li class="aside-product-list-item">
                     <a href="#/" class="remove">×</a>
-                    <a href="single-product.html">
+                    <a href="{{ route('single-product') }}">
                         <img src="{{ asset('web/assets/img/shop/product-mini/2.webp')}}" width="90" height="110"
                             alt="Image-HasTech">
                         <span class="product-title">Quickiin Mens shoes</span>
@@ -1725,9 +1609,9 @@
                 </li>
             </ul>
             <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-            <a class="btn-total" href="shop-cart.html">View cart</a>
-            <a class="btn-total" href="shop-checkout.html">Checkout</a>
-            <a class="d-block text-end lh-1" href="shop-checkout.html"><img
+            <a class="btn-total" href="{{ route('cart') }}">View cart</a>
+            <a class="btn-total" href="{{ route('checkout') }}">Checkout</a>
+            <a class="d-block text-end lh-1" href="{{ route('checkout') }}"><img
                     src="{{ asset('web/assets/img/photos/paypal.webp')}}" width="133" height="26" alt="Has-image"></a>
         </div>
     </aside>
@@ -1797,7 +1681,7 @@
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Single Product</a>
                                 <ul>
                                     <li><a href="single-normal-product.html"><span>Single Product Normal</span></a></li>
-                                    <li><a href="single-product.html"><span>Single Product Variable</span></a></li>
+                                    <li><a href="{{ route('single-product') }}"><span>Single Product Variable</span></a></li>
                                     <li><a href="single-group-product.html"><span>Single Product Group</span></a></li>
                                     <li><a href="single-affiliate-product.html"><span>Single Product Affiliate</span></a>
                                     </li>
@@ -1806,8 +1690,8 @@
                             <li>
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Others Pages</a>
                                 <ul>
-                                    <li><a href="shop-cart.html"><span>Shopping Cart</span></a></li>
-                                    <li><a href="shop-checkout.html"><span>Checkout</span></a></li>
+                                    <li><a href="{{ route('cart') }}"><span>Shopping Cart</span></a></li>
+                                    <li><a href="{{ route('checkout') }}"><span>Checkout</span></a></li>
                                     <li><a href="shop-wishlist.html"><span>Wishlist</span></a></li>
                                     <li><a href="shop-compare.html"><span>Compare</span></a></li>
                                 </ul>

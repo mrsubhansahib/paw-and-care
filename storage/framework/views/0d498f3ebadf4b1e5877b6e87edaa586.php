@@ -50,6 +50,15 @@
         <div class="dog-body"></div>
       </div>
     </div>
+
+    
+    <?php if(Request::is('/')): ?>
+      <?php echo $__env->make('layouts.web.header-home', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+    <?php else: ?>
+      <?php echo $__env->make('layouts.web.header', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?>
+    <?php endif; ?>
+
+    
     <!--== End Preloader Content ==-->
     <?php echo $__env->yieldContent('content'); ?>
     

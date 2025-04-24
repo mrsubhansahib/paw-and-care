@@ -50,6 +50,15 @@
         <div class="dog-body"></div>
       </div>
     </div>
+
+    {{-- Conditional Header --}}
+    @if (Request::is('/'))
+      @include('layouts.web.header-home')
+    @else
+      @include('layouts.web.header')
+    @endif
+
+    
     <!--== End Preloader Content ==-->
     @yield ('content')
     {{-- Foter Include --}}

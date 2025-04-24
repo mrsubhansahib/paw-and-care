@@ -1,9 +1,9 @@
-@extends('layouts.web.app')
-@section('content')
+
+<?php $__env->startSection('content'); ?>
 
     <main class="main-content">
         <!--== Start Page Header Area Wrapper ==-->
-        <div class="page-header-area" data-bg-img="{{ asset('web/assets/img/photos/bg1.webp') }}">
+        <div class="page-header-area" data-bg-img="<?php echo e(asset('web/assets/img/photos/bg1.webp')); ?>">
             <div class="container pt--0 pb--0">
                 <div class="row">
                     <div class="col-12">
@@ -11,7 +11,7 @@
                             <h2 class="title">About Us</h2>
                             <nav class="breadcrumb-area">
                                 <ul class="breadcrumb">
-                                    <li><a href="{{ route('home') }}">Home</a></li>
+                                    <li><a href="<?php echo e(route('home')); ?>">Home</a></li>
                                     <li class="breadcrumb-sep">//</li>
                                     <li>About Us</li>
                                 </ul>
@@ -30,7 +30,7 @@
                     <div class="row align-items-center">
                         <div class="col-lg-6">
                             <div class="about-thumb text-center">
-                                <img src="{{ asset('web/assets/img/about/2.webp') }}" width="529" height="429"
+                                <img src="<?php echo e(asset('web/assets/img/about/2.webp')); ?>" width="529" height="429"
                                     alt="Image-HasTech">
                             </div>
                         </div>
@@ -46,7 +46,7 @@
                                     reprehenderit in voluptate</p>
                                 <p class="text-color-theme">Velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
                                     sint occaecat cupidata non proident, sunt in culpa qui officia deserun</p>
-                                <a class="btn-theme" href="{{ asset('#') }}">Shop Now</a>
+                                <a class="btn-theme" href="<?php echo e(asset('#')); ?>">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -71,7 +71,7 @@
                         <!--== Start Team Item ==-->
                         <div class="team-item">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/team/1.webp') }}" width="270" height="300"
+                                <img src="<?php echo e(asset('web/assets/img/team/1.webp')); ?>" width="270" height="300"
                                     alt="Image-HasTech">
                                 <div class="member-icons">
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
@@ -95,7 +95,7 @@
                         <!--== Start Team Item ==-->
                         <div class="team-item">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/team/2.webp') }}" width="270" height="300"
+                                <img src="<?php echo e(asset('web/assets/img/team/2.webp')); ?>" width="270" height="300"
                                     alt="Image-HasTech">
                                 <div class="member-icons">
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
@@ -119,7 +119,7 @@
                         <!--== Start Team Item ==-->
                         <div class="team-item">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/team/3.webp') }}" width="270" height="300"
+                                <img src="<?php echo e(asset('web/assets/img/team/3.webp')); ?>" width="270" height="300"
                                     alt="Image-HasTech">
                                 <div class="member-icons">
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
@@ -143,7 +143,7 @@
                         <!--== Start Team Item ==-->
                         <div class="team-item">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/team/4.webp') }}" width="270" height="300"
+                                <img src="<?php echo e(asset('web/assets/img/team/4.webp')); ?>" width="270" height="300"
                                     alt="Image-HasTech">
                                 <div class="member-icons">
                                     <a href="https://www.facebook.com/" target="_blank" rel="noopener"><i
@@ -186,7 +186,7 @@
                             <div class="testi-inner-content">
                                 <div class="testi-author">
                                     <div class="testi-thumb">
-                                        <img src="{{ asset('web/assets/img/testimonial/1.webp') }}" width="90" height="90"
+                                        <img src="<?php echo e(asset('web/assets/img/testimonial/1.webp')); ?>" width="90" height="90"
                                             alt="Image-HasTech">
                                     </div>
                                     <div class="testi-info">
@@ -204,7 +204,7 @@
                                 <div class="testi-content">
                                     <p class="desc">Lorem ipsum dolor sit amet consectetl adipisicing elit, sed do eiusmod
                                         tempo incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <div class="testi-quote"><img src="{{ asset('web/assets/img/icons/quote1.webp') }}"
+                                    <div class="testi-quote"><img src="<?php echo e(asset('web/assets/img/icons/quote1.webp')); ?>"
                                             width="55" height="38" alt="Image-HasTech"></div>
                                 </div>
                             </div>
@@ -217,7 +217,7 @@
                             <div class="testi-inner-content">
                                 <div class="testi-author">
                                     <div class="testi-thumb">
-                                        <img src="{{ asset('web/assets/img/testimonial/2.webp') }}" width="90" height="90"
+                                        <img src="<?php echo e(asset('web/assets/img/testimonial/2.webp')); ?>" width="90" height="90"
                                             alt="Image-HasTech">
                                     </div>
                                     <div class="testi-info">
@@ -235,7 +235,7 @@
                                 <div class="testi-content">
                                     <p class="desc">Lorem ipsum dolor sit amet consectetl adipisicing elit, sed do eiusmod
                                         tempo incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <div class="testi-quote"><img src="{{ asset('web/assets/img/icons/quote1.webp') }}"
+                                    <div class="testi-quote"><img src="<?php echo e(asset('web/assets/img/icons/quote1.webp')); ?>"
                                             width="55" height="38" alt="Image-HasTech"></div>
                                 </div>
                             </div>
@@ -248,7 +248,7 @@
                             <div class="testi-inner-content">
                                 <div class="testi-author">
                                     <div class="testi-thumb">
-                                        <img src="{{ asset('web/assets/img/testimonial/3.webp') }}" width="90" height="90"
+                                        <img src="<?php echo e(asset('web/assets/img/testimonial/3.webp')); ?>" width="90" height="90"
                                             alt="Image-HasTech">
                                     </div>
                                     <div class="testi-info">
@@ -266,7 +266,7 @@
                                 <div class="testi-content">
                                     <p class="desc">Lorem ipsum dolor sit amet consectetl adipisicing elit, sed do eiusmod
                                         tempo incidi ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
-                                    <div class="testi-quote"><img src="{{ asset('web/assets/img/icons/quote1.webp') }}"
+                                    <div class="testi-quote"><img src="<?php echo e(asset('web/assets/img/icons/quote1.webp')); ?>"
                                             width="55" height="38" alt="Image-HasTech"></div>
                                 </div>
                             </div>
@@ -285,30 +285,30 @@
                     <div class="col-md-6">
                         <div class="banner-product-single-item">
                             <div class="thumb">
-                                <a href="{{ asset('#') }}">
-                                    <img src="{{ asset('web/assets/img/shop/banner/1.webp') }}" width="570" height="300"
+                                <a href="<?php echo e(asset('#')); ?>">
+                                    <img src="<?php echo e(asset('web/assets/img/shop/banner/1.webp')); ?>" width="570" height="300"
                                         alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
                                 <h5 class="sub-title">50% Off</h5>
                                 <h5 class="title">Dog Food</h5>
-                                <a class="btn-theme btn-theme-color btn-sm" href="{{ asset('#') }}">Shop Now</a>
+                                <a class="btn-theme btn-theme-color btn-sm" href="<?php echo e(asset('#')); ?>">Shop Now</a>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="banner-product-single-item">
                             <div class="thumb">
-                                <a href="{{ asset('#') }}">
-                                    <img src="{{ asset('web/assets/img/shop/banner/2.webp') }}" width="570" height="300"
+                                <a href="<?php echo e(asset('#')); ?>">
+                                    <img src="<?php echo e(asset('web/assets/img/shop/banner/2.webp')); ?>" width="570" height="300"
                                         alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
                                 <h5 class="sub-title">50% Off</h5>
                                 <h5 class="title">Cat Food</h5>
-                                <a class="btn-theme btn-theme-color btn-sm" href="{{ asset('#') }}">Shop Now</a>
+                                <a class="btn-theme btn-theme-color btn-sm" href="<?php echo e(asset('#')); ?>">Shop Now</a>
                             </div>
                         </div>
                     </div>
@@ -324,7 +324,7 @@
                     <div class="col-lg-3">
                         <div class="feature-icon-box">
                             <div class="icon-box">
-                                <img class="icon-img" src="{{ asset('web/assets/img/icons/f1.webp') }}" width="46"
+                                <img class="icon-img" src="<?php echo e(asset('web/assets/img/icons/f1.webp')); ?>" width="46"
                                     height="34" alt="Icon-HasTech">
                             </div>
                             <div class="content">
@@ -336,7 +336,7 @@
                     <div class="col-lg-3">
                         <div class="feature-icon-box">
                             <div class="icon-box">
-                                <img class="icon-img" src="{{ asset('web/assets/img/icons/f2.webp') }}" width="43"
+                                <img class="icon-img" src="<?php echo e(asset('web/assets/img/icons/f2.webp')); ?>" width="43"
                                     height="34" alt="Icon-HasTech">
                             </div>
                             <div class="content">
@@ -348,7 +348,7 @@
                     <div class="col-lg-3">
                         <div class="feature-icon-box">
                             <div class="icon-box">
-                                <img class="icon-img" src="{{ asset('web/assets/img/icons/f3.webp') }}" width="39"
+                                <img class="icon-img" src="<?php echo e(asset('web/assets/img/icons/f3.webp')); ?>" width="39"
                                     height="39" alt="Icon-HasTech">
                             </div>
                             <div class="content">
@@ -360,7 +360,7 @@
                     <div class="col-lg-3">
                         <div class="feature-icon-box">
                             <div class="icon-box">
-                                <img class="icon-img" src="{{ asset('web/assets/img/icons/f4.webp') }}" width="36"
+                                <img class="icon-img" src="<?php echo e(asset('web/assets/img/icons/f4.webp')); ?>" width="36"
                                     height="39" alt="Icon-HasTech">
                             </div>
                             <div class="content">
@@ -392,7 +392,7 @@
                         </div>
                         <div class="modal-action-product">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/shop/modal1.webp') }}" alt="Organic Food Juice"
+                                <img src="<?php echo e(asset('web/assets/img/shop/modal1.webp')); ?>" alt="Organic Food Juice"
                                     width="466" height="320">
                             </div>
                             <h4 class="product-name"><a href="single-product.html">Joust Duffle Bag</a></h4>
@@ -418,7 +418,7 @@
                         </div>
                         <div class="modal-action-product">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/shop/modal1.webp') }}" alt="Organic Food Juice"
+                                <img src="<?php echo e(asset('web/assets/img/shop/modal1.webp')); ?>" alt="Organic Food Juice"
                                     width="466" height="320">
                             </div>
                             <h4 class="product-name"><a href="single-product.html">Joust Duffle Bag</a></h4>
@@ -444,7 +444,7 @@
                                 <div class="col-lg-6">
                                     <!--== Start Product Thumbnail Area ==-->
                                     <div class="product-single-thumb">
-                                        <img src="{{ asset('web/assets/img/shop/quick-view1') }}.webp" width="544"
+                                        <img src="<?php echo e(asset('web/assets/img/shop/quick-view1')); ?>.webp" width="544"
                                             height="560" alt="Image-HasTech">
                                     </div>
                                     <!--== End Product Thumbnail Area ==-->
@@ -476,11 +476,11 @@
                                             <ul>
                                                 <li><span>SKU:</span> Ch-256xl</li>
                                                 <li><span>Categories:</span>
-                                                    <a href="{{ asset('#') }}">Pet Food. eCommerce</a>
+                                                    <a href="<?php echo e(asset('#')); ?>">Pet Food. eCommerce</a>
                                                 </li>
                                                 <li><span>Tags:</span>
-                                                    <a href="{{ asset('#') }}">Petfood. Pet</a>,
-                                                    <a href="{{ asset('#') }}">Animal.</a>
+                                                    <a href="<?php echo e(asset('#')); ?>">Petfood. Pet</a>,
+                                                    <a href="<?php echo e(asset('#')); ?>">Animal.</a>
                                                 </li>
                                             </ul>
                                         </div>
@@ -543,10 +543,10 @@
                 </li>
             </ul>
             <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-            <a class="btn-total" href="{{ route('cart') }}">View cart</a>
-            <a class="btn-total" href="{{ route('checkout') }}">Checkout</a>
-            <a class="d-block text-end lh-1" href="{{ route('checkout') }}"><img
-                    src="{{ asset('web/assets/img/photos/paypal.webp') }}" width="133" height="26" alt="Has-image"></a>
+            <a class="btn-total" href="shop-cart.html">View cart</a>
+            <a class="btn-total" href="shop-checkout.html">Checkout</a>
+            <a class="d-block text-end lh-1" href="shop-checkout.html"><img
+                    src="<?php echo e(asset('web/assets/img/photos/paypal.webp')); ?>" width="133" height="26" alt="Has-image"></a>
         </div>
     </aside>
     <!--== End Aside Cart ==-->
@@ -608,7 +608,7 @@
                                     <li><a href="shop-three-columns.html"><span>Shop 3 Column</span></a></li>
                                     <li><a href="shop-four-columns.html"><span>Shop 4 Column</span></a></li>
                                     <li><a href="shop-left-sidebar.html"><span>Shop Left Sidebar</span></a></li>
-                                    <li><a href="{{ asset('#') }}"><span>Shop Right Sidebar</span></a></li>
+                                    <li><a href="<?php echo e(asset('#')); ?>"><span>Shop Right Sidebar</span></a></li>
                                 </ul>
                             </li>
                             <li>
@@ -624,10 +624,10 @@
                             <li>
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Others Pages</a>
                                 <ul>
-                                    <li><a href="{{ route('cart') }}"><span>Shopping Cart</span></a></li>
-                                    <li><a href="{{ route('checkout') }}"><span>Checkout</span></a></li>
-                                    <li><a href="#"><span>Wishlist</span></a></li>
-                                    <li><a href="#"><span>Compare</span></a></li>
+                                    <li><a href="shop-cart.html"><span>Shopping Cart</span></a></li>
+                                    <li><a href="shop-checkout.html"><span>Checkout</span></a></li>
+                                    <li><a href="shop-wishlist.html"><span>Wishlist</span></a></li>
+                                    <li><a href="shop-compare.html"><span>Compare</span></a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -670,4 +670,5 @@
             </nav>
         </div>
     </aside>
-@endsection
+<?php $__env->stopSection(); ?>
+<?php echo $__env->make('layouts.web.app', array_diff_key(get_defined_vars(), ['__data' => 1, '__path' => 1]))->render(); ?><?php /**PATH C:\laragon\www\personal\paw-and-care\resources\views/layouts/web/about/index.blade.php ENDPATH**/ ?>

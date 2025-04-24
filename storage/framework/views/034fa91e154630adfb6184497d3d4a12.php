@@ -1,12 +1,12 @@
-<header class="header-area" data-bg-img="{{ asset('web/assets/img/photos/header-bg.webp')}}">
+<header class="header-area" data-bg-img="<?php echo e(asset('web/assets/img/photos/header-bg.webp')); ?>">
     <div class="container">
         <div class="row no-gutter align-items-center position-relative">
             <div class="col-12">
                 <div class="header-align">
                     <div class="header-align-start">
                         <div class="header-logo-area">
-                            <a href="{{ route('home') }}">
-                                <img class="logo-main" src="{{ asset('web/assets/img/logo-light.webp') }}" width="158"
+                            <a href="<?php echo e(route('home')); ?>">
+                                <img class="logo-main" src="<?php echo e(asset('web/assets/img/logo-light.webp')); ?>" width="158"
                                     height="36" alt="Logo" />
                             </a>
                         </div>
@@ -14,15 +14,15 @@
                     <div class="header-align-center">
                         <div class="header-navigation-area position-relative">
                             <ul class="main-menu nav">
-                                <li class="has-submenu"><a href="{{ route('home')}}"><span>Home</span></a>
+                                <li class="has-submenu"><a href="<?php echo e(route('home')); ?>"><span>Home</span></a>
                                 </li>
-                                <li><a href="{{ route('about') }}"><span>About</span></a></li>
+                                <li><a href="<?php echo e(route('about')); ?>"><span>About</span></a></li>
                                 <li class="has-submenu position-static"><a
-                                        href="{{ route('shop') }}"><span>Shop</span></a>
+                                        href="<?php echo e(route('shop')); ?>"><span>Shop</span></a>
                                 </li>
-                                <li class="has-submenu"><a href="{{ route('blog') }}"><span>Blog</span></a>
+                                <li class="has-submenu"><a href="<?php echo e(route('blog')); ?>"><span>Blog</span></a>
                                 </li>
-                                <li class="has-submenu"><a href="{{ route('adopt') }}"><span>ADOPTION</span></a>
+                                <li class="has-submenu"><a href="<?php echo e(route('adopt')); ?>"><span>ADOPTION</span></a>
                                 </li>
                                 <li><a href="#"><span>Contact</span></a></li>
                             </ul>
@@ -36,7 +36,7 @@
                                         class="pe-7s-search icon"></i></button>
                             </div>
                             <div class="shopping-account">
-                                <a class="shopping-account-btn" href="{{ route('user-login') }}">
+                                <a class="shopping-account-btn" href="<?php echo e(route('user-login')); ?>">
                                     <i class="pe-7s-users icon"></i>
                                 </a>
                             </div>
@@ -76,7 +76,7 @@
             <li class="aside-product-list-item">
                 <a href="#/" class="remove">×</a>
                 <a href="single-product.html">
-                    <img src="{{ asset('web/assets/img/shop/product-mini/1.webp')}}" width="90" height="110" alt="Image-HasTech">
+                    <img src="<?php echo e(asset('web/assets/img/shop/product-mini/1.webp')); ?>" width="90" height="110" alt="Image-HasTech">
                     <span class="product-title">Leather Mens Slipper</span>
                 </a>
                 <span class="product-price">1 × £69.99</span>
@@ -84,17 +84,17 @@
             <li class="aside-product-list-item">
                 <a href="#/" class="remove">×</a>
                 <a href="single-product.html">
-                    <img src="{{ asset('web/assets/img/shop/product-mini/2.webp')}}" width="90" height="110" alt="Image-HasTech">
+                    <img src="<?php echo e(asset('web/assets/img/shop/product-mini/2.webp')); ?>" width="90" height="110" alt="Image-HasTech">
                     <span class="product-title">Quickiin Mens shoes</span>
                 </a>
                 <span class="product-price">1 × £20.00</span>
             </li>
         </ul>
         <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-        <a class="btn-total" href="{{ route('cart') }}">View cart</a>
-        <a class="btn-total" href="{{ route('checkout') }}">Checkout</a>
-        <a class="d-block text-end lh-1" href="{{ route('checkout') }}"><img src="{{ asset('web/assets/img/photos/paypal.webp')}}" width="133"
+        <a class="btn-total" href="<?php echo e(route('cart')); ?>">View cart</a>
+        <a class="btn-total" href="<?php echo e(route('checkout')); ?>">Checkout</a>
+        <a class="d-block text-end lh-1" href="<?php echo e(route('checkout')); ?>"><img src="<?php echo e(asset('web/assets/img/photos/paypal.webp')); ?>" width="133"
                 height="26" alt="Has-image"></a>
     </div>
 </aside>
-<!--== End Aside Cart ==-->
+<!--== End Aside Cart ==--><?php /**PATH C:\laragon\www\personal\paw-and-care\resources\views/layouts/web/header.blade.php ENDPATH**/ ?>

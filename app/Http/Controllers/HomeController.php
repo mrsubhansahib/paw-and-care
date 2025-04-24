@@ -35,11 +35,39 @@ class HomeController extends Controller
         return view('layouts.web.blog.index');
     }
     /**
+     * Display blog-detail page
+     */
+    public function blogDetail()
+    {
+        return view('layouts.web.blog.detail.index');
+    }
+    /**
      * Display adopt page
      */
     public function adopt()
     {
         return view('layouts.web.adopt.index');
+    }
+    /**
+     * Display adopt page
+     */
+    public function product()
+    {
+        return view('layouts.web.shop.product.index');
+    }
+    /**
+     * Display adopt page
+     */
+    public function cart()
+    {
+        return view('layouts.web.cart.index');
+    }
+    /**
+     * Display adopt page
+     */
+    public function checkout()
+    {
+        return view('layouts.web.checkout.index');
     }
 
     /**

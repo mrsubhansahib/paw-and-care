@@ -1,70 +1,6 @@
 @extends('layouts.web.app')
 @section('content')
-    <header class="header-area" data-bg-img="{{ asset('web/assets/img/photos/header-bg.webp') }}">
-        <div class="container">
-            <div class="row no-gutter align-items-center position-relative">
-                <div class="col-12">
-                    <div class="header-align">
-                        <div class="header-align-start">
-                            <div class="header-logo-area">
-                                <a href="#">
-                                    <img class="logo-main" src="{{ asset('web/assets/img/logo-light.webp') }}" width="158"
-                                        height="36" alt="Logo" />
-                                </a>
-                            </div>
-                        </div>
-                        <div class="header-align-center">
-                            <div class="header-navigation-area position-relative">
-                                <ul class="main-menu nav">
-                                    <li class="has-submenu"><a href="{{ route('home')}}"><span>Home</span></a>
-                                    </li>
-                                    <li><a href="{{ route('about') }}"><span>About</span></a></li>
-                                    <li class="has-submenu position-static"><a
-                                            href="{{ route('shop') }}"><span>Shop</span></a>
-                                    </li>
-                                    <li class="has-submenu"><a href="{{ route('blog') }}"><span>Blog</span></a>
-                                    </li>
-                                    <li class="has-submenu"><a href="{{ route('adopt') }}"><span>ADOPTION</span></a>
-                                    </li>
-                                    <li><a href="#"><span>Contact</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="header-align-end">
-                            <div class="header-action-area">
-                                <div class="shopping-search">
-                                    <button class="shopping-search-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasSearch" aria-controls="AsideOffcanvasSearch"><i
-                                            class="pe-7s-search icon"></i></button>
-                                </div>
-                                <div class="shopping-account">
-                                    <a class="shopping-account-btn" href="#">
-                                        <i class="pe-7s-users icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-wishlist">
-                                    <a class="shopping-wishlist-btn" href="#">
-                                        <i class="pe-7s-like icon"></i>
-                                    </a>
-                                </div>
-                                <div class="shopping-cart">
-                                    <button class="shopping-cart-btn" type="button" data-bs-toggle="offcanvas"
-                                        data-bs-target="#AsideOffcanvasCart" aria-controls="AsideOffcanvasCart">
-                                        <i class="pe-7s-shopbag icon"></i>
-                                        <sup class="shop-count">2</sup>
-                                    </button>
-                                </div>
-                                <button class="btn-menu" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#AsideOffcanvasMenu" aria-controls="AsideOffcanvasMenu">
-                                    <i class="pe-7s-menu"></i>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+
     <main class="main-content">
         <!--== Start Page Header Area Wrapper ==-->
         <div class="page-header-area" data-bg-img="{{ asset('web/assets/img/photos/bg1.webp')}}">
@@ -95,8 +31,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/1.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/1.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -106,9 +43,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Lorem ipsum dolor sit amet conse adipis.</a>
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Lorem ipsum dolor sit amet conse adipis.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -117,8 +54,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/2.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/2.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -128,9 +66,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">It is a long established fact that a reader
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">It is a long established fact that a reader
                                         will.</a></h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -139,8 +77,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/3.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/3.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -150,9 +89,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Fashions fade, style is eternal About
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Fashions fade, style is eternal About
                                         Upto.</a></h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -161,8 +100,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/4.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/4.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -172,9 +112,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">The industry's standard dummy text ever.</a>
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">The industry's standard dummy text ever.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -183,8 +123,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/5.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/5.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -194,9 +135,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Be distracted by the readable content.</a>
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Be distracted by the readable content.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -205,8 +146,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/6.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/6.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -216,9 +158,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Lorem Ipsum is simply dummy text of the.</a>
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Lorem Ipsum is simply dummy text of the.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -227,8 +169,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/7.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/7.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -238,9 +181,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Celebrity daughter <br>opens about upto.</a>
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Celebrity daughter <br>opens about upto.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -249,8 +192,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/8.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/8.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -260,9 +204,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Love stories of hollywood Celebrities.</a>
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Love stories of hollywood Celebrities.</a>
                                 </h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -271,8 +215,9 @@
                         <!--== Start Blog Item ==-->
                         <div class="post-item">
                             <div class="thumb">
-                                <a href="blog-details.html">
-                                    <img src="{{ asset('web/assets/img/blog/9.webp')}}" width="350" height="250" alt="Image-HasTech">
+                                <a href="{{ route('blog-detail') }}">
+                                    <img src="{{ asset('web/assets/img/blog/9.webp')}}" width="350" height="250"
+                                        alt="Image-HasTech">
                                 </a>
                             </div>
                             <div class="content">
@@ -282,9 +227,9 @@
                                         <li class="post-date"><a href="blog.html">Sep 24,2022</a></li>
                                     </ul>
                                 </div>
-                                <h4 class="title"><a href="blog-details.html">Fashions fade, style is eternal about
+                                <h4 class="title"><a href="{{ route('blog-detail') }}">Fashions fade, style is eternal about
                                         upto.</a></h4>
-                                <a class="btn-theme btn-sm" href="blog-details.html">Read More</a>
+                                <a class="btn-theme btn-sm" href="{{ route('blog-detail') }}">Read More</a>
                             </div>
                         </div>
                         <!--== End Blog Item ==-->
@@ -320,7 +265,8 @@
                         </div>
                         <div class="modal-action-product">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/shop/modal1.webp')}}" alt="Organic Food Juice" width="466" height="320">
+                                <img src="{{ asset('web/assets/img/shop/modal1.webp')}}" alt="Organic Food Juice"
+                                    width="466" height="320">
                             </div>
                             <h4 class="product-name"><a href="single-product.html">Joust Duffle Bag</a></h4>
                         </div>
@@ -345,7 +291,8 @@
                         </div>
                         <div class="modal-action-product">
                             <div class="thumb">
-                                <img src="{{ asset('web/assets/img/shop/modal1.webp')}}" alt="Organic Food Juice" width="466" height="320">
+                                <img src="{{ asset('web/assets/img/shop/modal1.webp')}}" alt="Organic Food Juice"
+                                    width="466" height="320">
                             </div>
                             <h4 class="product-name"><a href="single-product.html">Joust Duffle Bag</a></h4>
                         </div>
@@ -370,8 +317,8 @@
                                 <div class="col-lg-6">
                                     <!--== Start Product Thumbnail Area ==-->
                                     <div class="product-single-thumb">
-                                        <img src="{{ asset('web/assets/img/shop/quick-view1.webp')}}" width="544" height="560"
-                                            alt="Image-HasTech">
+                                        <img src="{{ asset('web/assets/img/shop/quick-view1.webp')}}" width="544"
+                                            height="560" alt="Image-HasTech">
                                     </div>
                                     <!--== End Product Thumbnail Area ==-->
                                 </div>
@@ -454,7 +401,8 @@
                 <li class="aside-product-list-item">
                     <a href="#/" class="remove">×</a>
                     <a href="single-product.html">
-                        <img src="{{ asset('web/assets/img/shop/product-mini/1.webp')}}" width="90" height="110" alt="Image-HasTech">
+                        <img src="{{ asset('web/assets/img/shop/product-mini/1.webp')}}" width="90" height="110"
+                            alt="Image-HasTech">
                         <span class="product-title">Leather Mens Slipper</span>
                     </a>
                     <span class="product-price">1 × £69.99</span>
@@ -462,17 +410,18 @@
                 <li class="aside-product-list-item">
                     <a href="#/" class="remove">×</a>
                     <a href="single-product.html">
-                        <img src="{{ asset('web/assets/img/shop/product-mini/2.webp')}}" width="90" height="110" alt="Image-HasTech">
+                        <img src="{{ asset('web/assets/img/shop/product-mini/2.webp')}}" width="90" height="110"
+                            alt="Image-HasTech">
                         <span class="product-title">Quickiin Mens shoes</span>
                     </a>
                     <span class="product-price">1 × £20.00</span>
                 </li>
             </ul>
             <p class="cart-total"><span>Subtotal:</span><span class="amount">£89.99</span></p>
-            <a class="btn-total" href="shop-cart.html">View cart</a>
-            <a class="btn-total" href="shop-checkout.html">Checkout</a>
-            <a class="d-block text-end lh-1" href="shop-checkout.html"><img src="{{ asset('web/assets/img/photos/paypal.webp')}}" width="133"
-                    height="26" alt="Has-image"></a>
+            <a class="btn-total" href="{{ route('cart') }}">View cart</a>
+            <a class="btn-total" href="{{ route('checkout') }}">">Checkout</a>
+            <a class="d-block text-end lh-1" href="{{ route('checkout') }}">"><img
+                    src="{{ asset('web/assets/img/photos/paypal.webp')}}" width="133" height="26" alt="Has-image"></a>
         </div>
     </aside>
     <!--== End Aside Cart ==-->
@@ -550,8 +499,8 @@
                             <li>
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Others Pages</a>
                                 <ul>
-                                    <li><a href="shop-cart.html"><span>Shopping Cart</span></a></li>
-                                    <li><a href="shop-checkout.html"><span>Checkout</span></a></li>
+                                    <li><a href="{{ route('cart') }}"><span>Shopping Cart</span></a></li>
+                                    <li><a href="{{ route('checkout') }}">"><span>Checkout</span></a></li>
                                     <li><a href="shop-wishlist.html"><span>Wishlist</span></a></li>
                                     <li><a href="shop-compare.html"><span>Compare</span></a></li>
                                 </ul>
@@ -574,7 +523,7 @@
                                 <a class="offcanvas-nav-item" href="javascript:void(0)">Single Blog</a>
                                 <ul>
                                     <li><a href="blog-details-no-sidebar.html">Blog Details</a></li>
-                                    <li><a href="blog-details.html">Blog Details Left Sidebar</a></li>
+                                    <li><a href="{{ route('blog-detail') }}">Blog Details Left Sidebar</a></li>
                                     <li><a href="blog-details-right-sidebar.html">Blog Details Right Sidebar</a></li>
                                 </ul>
                             </li>
