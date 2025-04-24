@@ -2,16 +2,14 @@
      <!-- Sidebar Logo -->
      <div class="logo-box">
           <a href="<?php echo e(route('any', 'index')); ?>" class="logo-dark">
-               <img src="/images/logo-sm.png" class="logo-sm" alt="logo sm">
-               <img src="/images/logo-dark.png" class="logo-lg" alt="logo dark">
+              <img src="/images/gentle-tails1.png" class="logo-sm" alt="logo sm" style="height: 30px; width: auto; object-fit: contain;">
+              <img src="/images/gentle-tails1.png" class="logo-lg" alt="logo dark" style="height: 60px; width: auto; object-fit: contain;">
           </a>
-
           <a href="<?php echo e(route('any', 'index')); ?>" class="logo-light">
-               <img src="/images/logo-sm.png" class="logo-sm" alt="logo sm">
-               <img src="/images/logo-light.png" class="logo-lg" alt="logo light">
+              <img src="/images/logo-light-gentle.png" class="logo-sm" alt="logo sm" style="height: 30px; width: auto; object-fit: contain;">
+              <img src="/images/logo-light-gentle.png" class="logo-lg" alt="logo light" style="height: 60px; width: auto; object-fit: contain;">
           </a>
-     </div>
-
+      </div>       
      <div class="scrollbar" data-simplebar>
 
           <ul class="navbar-nav" id="navbar-nav">
